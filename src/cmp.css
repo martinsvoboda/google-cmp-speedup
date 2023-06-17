@@ -1,0 +1,17 @@
+/* Prevent font swap use default website font */
+body div.fc-consent-root {
+    font-family: inherit !important;
+}
+
+body .fc-consent-root .fc-faq-header .fc-faq-label {
+    font-family: inherit !important;
+}
+
+/* Load only subset of Material icons */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:font/woff2;base64,{MATERIAL_ICONS_BASE64}) format('woff2');
+}
